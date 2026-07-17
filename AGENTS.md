@@ -27,11 +27,7 @@ No test or typecheck commands exist. `npm run lint` is the only verification ste
 
 All app code lives in `src/App.jsx` — single-component app with inline state, no routing, no component decomposition. `src/main.jsx` is the entry point.
 
-## Known issues (intentional — course starter)
+## Notes
 
-- `amount` is stored as a string (`useState("")`), causing string arithmetic bugs (e.g., `reduce` sums concatenate instead of adding)
-- Freelance Work seed entry has `type: "expense"` with `category: "salary"` (should be income)
-- No delete/edit functionality
-- All state and UI in one component
-
-These are intentional bugs for the course to fix. Don't "fix" them unless asked.
+- Freelance Work seed entry has been corrected to `type: "income"` (was incorrectly `type: "expense"`)
+- All state and UI live in one component
